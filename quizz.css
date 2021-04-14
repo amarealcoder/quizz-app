@@ -55,3 +55,8 @@ input[type="submit"] {
   margin: 1rem;
   text-align: center;
 }
+@media (max-width: 200px) {
+  input[type="submit"] {
+    display: block;
+  }
+}

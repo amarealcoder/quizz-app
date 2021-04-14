@@ -61,7 +61,7 @@ input[type="submit"] {
   margin: 1rem;
   text-align: center;
 }
-@media (max-width: 200px) {
+@media (min-width: 200px) and (max-width: 500px) {
   input[type="submit"] {
     display: block;
   }

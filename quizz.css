@@ -32,6 +32,8 @@ body {
 }
 h2 {
   text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 p {
   font-size: 1.5rem;
@@ -44,7 +46,7 @@ ul {
 li {
   padding: 1rem;
   color: aqua;
-  margin-left: 5rem;
+  /* margin-left: 5rem; */
 }
 input[type="radio"] {
   width: 6%;
@@ -64,5 +66,7 @@ input[type="submit"] {
 @media (min-width: 200px) and (max-width: 500px) {
   input[type="submit"] {
     display: block;
+    padding: 0.65rem;
+    margin-top: 0.65rem;
   }
 }

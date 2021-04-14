@@ -69,4 +69,7 @@ input[type="submit"] {
     padding: 0.65rem;
     margin-top: 0.65rem;
   }
+  p {
+    font-size: 1rem;
+  }
 }

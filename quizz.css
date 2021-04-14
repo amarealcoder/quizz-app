@@ -65,11 +65,11 @@ input[type="submit"] {
 }
 @media (min-width: 200px) and (max-width: 500px) {
   input[type="submit"] {
-    display: block;
     padding: 0.65rem;
     margin-top: 0.65rem;
+    font-size: 16px;
   }
   p {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }

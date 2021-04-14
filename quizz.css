@@ -20,6 +20,12 @@ body {
   color: #f4f4f4;
   padding-top: 3rem;
 }
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .content {
   margin: 2rem 0rem 0rem;
   padding: 1.5rem;

@@ -1,14 +1,11 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-size: 20px;
+  font-family: "Work Sans", sans-serif;
+  color: #333;
+  font-weight: 300;
+  text-align: center;
   background-image: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
@@ -16,60 +13,65 @@ body {
     rgba(0, 212, 255, 1) 100%
   );
 }
-.container-header {
+h1 {
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 25px;
+  color: #020226;
+}
+.question {
+  font-size: 35px;
+  margin-bottom: 10px;
   color: #f4f4f4;
-  padding-top: 3rem;
 }
-.heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.answers {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+  font-size: 25px;
+  color: aqua;
 }
-.content {
-  margin: 2rem 0rem 0rem;
-  padding: 1.5rem;
+.answers label {
+  display: block;
+  margin-bottom: 10px;
 }
-h2 {
-  text-align: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
+button {
+  font-family: "Work Sans", sans-serif;
+  font-size: 22px;
+  background-color: #020226;
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+button:hover {
+  background-color: #38a;
 }
 p {
-  font-size: 1.5rem;
-  color: aqua;
-}
-ul {
-  list-style-type: none;
-  padding-left: 3rem;
-}
-li {
-  padding: 1rem;
-  color: aqua;
-  /* margin-left: 5rem; */
-}
-input[type="radio"] {
-  width: 6%;
-  height: 1.2rem;
-}
-input[type="submit"] {
-  background-color: #020226;
   color: #f4f4f4;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 18px;
-  padding: 1.2rem;
-  margin: 1rem;
-  text-align: center;
+  font-size: 30px;
 }
-@media (min-width: 200px) and (max-width: 500px) {
-  input[type="submit"] {
-    padding: 0.65rem;
-    margin-top: 0.65rem;
-    font-size: 16px;
-  }
-  p {
-    font-size: 1.25rem;
-  }
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.active-slide {
+  opacity: 1;
+  z-index: 2;
+}
+.quiz-container {
+  position: relative;
+  height: 200px;
+  margin-top: 45px;
+  color: #f4f4f4;
 }

@@ -4,50 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quizz app</title>
+    <title>Quiz page</title>
     <link rel="stylesheet" href="quizz.css" />
   </head>
   <body>
-    <div id="header">
-      <div class="container">
-        <div class="container-header">
-          <h2>
-            Prove your knowledge of computer by getting up to 70% of the
-            questions
-          </h2>
-        </div>
-      </div>
-      <div class="heading">
-        <div class="container content">
-          <ul>
-            <p>Who is the father of computer?</p>
-            <li>
-              <input type="radio" name="quizz" value="Charles" id="charles" />
-              <label for="charles">Charles Barbbage</label>
-            </li>
-            <li>
-              <input type="radio" name="quizz" value="Clarke" id="clarke" />
-              <label for="clarke">Clarke Edmund M.</label>
-            </li>
-            <li>
-              <input type="radio" name="quizz" value="Chomsky" id="chomsky" />
-              <label for="chomsky">Chomsky Noam</label>
-            </li>
-            <li>
-              <input type="radio" name="quizz" value="Pascal" id="pascal" />
-              <label for="pascal">Pascal Blaise</label>
-            </li>
-          </ul>
-        </div>
-        <div class="container content">
-          <input type="submit" id="previous" class="btn" value="Previous" />
-
-          <input type="submit" id="submit" class="btn" value="Submit" />
-
-          <input type="submit" id="next" class="btn" value="Next" />
-        </div>
-      </div>
+    <h1>QUIZ ON RANDOM QUESTIONS</h1>
+    <div class="quiz-container">
+      <div id="quiz"></div>
     </div>
+    <button id="previous">Previous Question</button>
+    <button id="next">Next Question</button>
+    <button id="submit">Submit Quiz</button>
+    <div id="results"></div>
     <script src="quizz.js"></script>
   </body>
 </html>
